@@ -28,7 +28,7 @@ cd cnsc/backend
 
 ## 2. Crear entorno virtual
 
-.venv\Scripts\Activate    # Windows
+ python -m venv .venv # Windows
 source .venv/bin/activate # Linux/Mac
 
 ## 3. Activar entorno virtual
@@ -46,6 +46,8 @@ python manage.py migrate
 ## 6. Crear super usuario
 
 python manage.py createsuperuser
+- Usuario: admin
+- Contraseña: Con01234
 
 ## 7. Levantar el servidor 
 
@@ -56,4 +58,9 @@ En caso de presentar problemas con el puerto (8000 predeterminado), seleccionar 
 
 python manage.py runserver 8080
 # 👉 http://127.0.0.1:8080
+
+## 8. Configurar base de datos (PostgreSQL)
+
+
+
 
