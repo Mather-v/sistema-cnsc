@@ -60,7 +60,25 @@ python manage.py runserver 8080
 # 👉 http://127.0.0.1:8080
 
 ## 8. Configurar base de datos (PostgreSQL)
+El proyecto usa variables de entorno para manejar la configuración sensible.  
+Crea un archivo `.env` en la carpeta `backend/` (al mismo nivel que `manage.py`) con este contenido:
 
+```ini
+# 🔑 Configuración de Django
+SECRET_KEY=tu_clave_secreta
+
+# ⚙️ Debug
+DEBUG=True
+
+# 🌍 Hosts permitidos
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+# 🗄️ Configuración de PostgreSQL
+DB_NAME=cnsc_db
+DB_USER=postgres
+DB_PASSWORD=tu_password
+DB_HOST=localhost
+DB_PORT=5432
 
 
 
